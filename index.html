@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!--<script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: #66AAFF;
+      text-align: center;
+    }
+
+  #container{
+    position:relative;
+    vertical-align:auto;
+  }
+  #fgcanvas{
+      position: absolute;
+      top:-25%;
+      left:0;
+      z-index: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    test
+  </h1>
+  <div id="container">
+    <video	id="Video1"	onclick="this.play()">
+      <source	src="assets/movie.mp4">
+    </video>
+    <div id="fgcanvas"></div>
+  </div>
+</body>
+
+</html>
